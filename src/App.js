@@ -10,11 +10,12 @@ function App() {
   const iRunOnlyOnce = () => {
     console.log("i run only once");
   };
+  
   useEffect(iRunOnlyOnce, []);
 
   useEffect(() => {
     console.log(keyword);
-  }, [keyword])   //keyword 값이 바뀔때만 위의 console 코드가 실행됨.
+  }, [keyword])   //keyword 값이 바뀔때만 위의 console 코드가 실행됨. 이때 변화의 기준이 되는것이 [] 안에오게 되는데 이를 dependency 라고함.
 
   useEffect(() => {
     console.log(counter);
