@@ -14,8 +14,10 @@ function App() {
   useEffect(iRunOnlyOnce, []);
 
   useEffect(() => {
-    console.log(keyword);
-  }, [keyword])   //keyword 값이 바뀔때만 위의 console 코드가 실행됨. 이때 변화의 기준이 되는것이 [] 안에오게 되는데 이를 dependency 라고함.
+    console.log(keyword); //dependency 가 바뀔때 실행되는 코드를 (여기서는 console.log) effect 라고한다. 추가로 아래와같이 컴포넌트가 없어지거나 사라질때 실행되는 clean up 함수가 있다.
+    return () => console.log("destroyed");  //component 가 없어질때, 특정 값이 변경되기 직전에 실행된다. 변화가 감지되면 위의 effect보다 먼저 실행된다.
+  }, [keyword])   //keyword 값이 바뀔때만 위의 console 코드가 실행됨. 이때 변화의 기준이 되는것이 [] 안에오게 되는데 이를 dependency 라고함. dependency가 비어있다면, [] 상태라면 한번만 effect가 실행됨.
+
 
   useEffect(() => {
     console.log(counter);
