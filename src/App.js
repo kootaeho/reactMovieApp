@@ -6,6 +6,10 @@ import {
 
 import Home from "./routes/Home"
 import Detail from "./routes/Detail"
+import {Link} from "react-router-dom"
+
+
+
 function App(){
   return (
   <Router>
