@@ -17,7 +17,7 @@ Movie.propTypes = {
     coverImg : PropTypes.string.isRequired,
     title : PropTypes.string.isRequired,
     summary : PropTypes.string.isRequired,
-    genres : PropTypes.arratOf(PropTypes.string).isRequired,
+    genres : PropTypes.arrayOf(PropTypes.string).isRequired,
 
 }
 
