@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
-
 function Movie({id,title, coverimg, summary, genres}){
 
-    return (<div>
+    return (
+    <div >  
         <h2>
           <Link to = {`/movie/${id}`}>{title}</Link>
           </h2>
@@ -13,7 +13,8 @@ function Movie({id,title, coverimg, summary, genres}){
         <ul>
           {genres.map(g => <li key = {g}>{g}</li>)}
         </ul>
-        </div>);
+      </div>
+      );
 }
 
 Movie.propTypes = {
