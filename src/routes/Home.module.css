@@ -1,9 +1,7 @@
-.con {
-  
-}
 
 .total{
-    display: grid;
+  background-color:floralwhite;
+  display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2열로 반복 */
   gap: 20px; 
 }
