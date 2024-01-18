@@ -1,10 +1,25 @@
+import React, { useState } from 'react';
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 import styles from './Movie.module.css';
 
 function Movie({id,title, coverimg, summary, genres}){
-    return (
-    <div className = {styles.con} >  
+  const [isHover, setHover] = useState(false);
+  const onMouse = () =>{
+    setHover(true);
+  };
+
+  const onMouseleave = () =>{
+    setHover(false);
+  };
+
+
+  return (
+    <div
+    className={`${styles.con} ${isHover ? styles.hovered : ''}`}
+    onMouseEnter={onMouse}
+    onMouseLeave={onMouseleave}
+    >  
         <img className = {styles.movie__img} src={coverimg} alt={title}/>
         <h2>
           <Link to = {`/movie/${id}`}>{title}</Link>

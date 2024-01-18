@@ -4,8 +4,13 @@
     margin: 30px;
     margin-bottom: 100px;
     border-radius: 20px;
-
+    max-width: 1000px;
+    transition: transform 0.5s ease;
 }
+
+.con.hovered {
+    transform: scale(1.05); 
+  }
 
 .movie__img {
     position: relative;

@@ -1,6 +1,6 @@
 
 .total{
-  background-color:floralwhite;
+  background-color:rgb(190, 188, 188);
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2열로 반복 */
   gap: 20px; 
