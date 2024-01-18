@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.a117cc63.css","mappings":"AAIA,mBAGE,aAAS,CAFP,YAAa,CAEf,QAAS,CADT,mCAEF","sources":["routes/Home.module.css"],"sourcesContent":[".con {\r\n  \r\n}\r\n\r\n.total{\r\n    display: grid;\r\n  grid-template-columns: repeat(2, 1fr); /* 2열로 반복 */\r\n  gap: 20px; \r\n}"],"names":[],"sourceRoot":""}
