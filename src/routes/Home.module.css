@@ -1,7 +1,16 @@
 
-.total{
-  background-color:rgb(190, 188, 188);
+.parent{
+  display:block;
+  background: black;
+}
+
+
+.grid{
+  max-width: 2000px;
+  align-self: center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2열로 반복 */
+  grid-template-columns: repeat(5, 1fr); /* 2열로 반복 */
   gap: 20px; 
+  margin-left: auto;
+  margin-right: auto;
 }
