@@ -10,3 +10,8 @@
     transform: scale(1.05); 
   }
 
+.gridcenter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -20,7 +20,9 @@ function Movie({id,title, coverimg, summary, genres}){
     onMouseEnter={onMouse}
     onMouseLeave={onMouseleave}
     >
-    <img src={coverimg} alt={title}/>
+      <div className = {styles.gridcenter}>
+        <img src={coverimg} alt={title}/>
+        </div>
     </div>
       );
 }
