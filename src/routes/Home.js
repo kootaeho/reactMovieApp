@@ -18,7 +18,7 @@ function Home(){
   }, []);
   return (
   <div className= {styles.parent}>
-  <div className = {styles.grid}>
+    <div className = {styles.grid}>
     {loading ? <h1>Loading...</h1> : (movies.map((movie) => 
     <Movie
     id={movie.id}
