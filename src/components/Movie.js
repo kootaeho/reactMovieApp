@@ -21,8 +21,15 @@ function Movie({id,title, coverimg, summary, genres}){
     onMouseLeave={onMouseleave}
     >
       <div className = {styles.gridcenter}>
-        <img src={coverimg} alt={title}/>
+        <div className = {styles.imageContainer}>
+        <img src={coverimg} alt={title} className={`${styles.image} ${isHover ? styles.imageHovered : ''}`}/>
+        {isHover && (
+          <div className={styles.tooltip}>
+            {title}
+          </div>
+        )}
         </div>
+      </div>
     </div>
       );
 }

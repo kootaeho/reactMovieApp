@@ -11,7 +11,42 @@
   }
 
 .gridcenter{
+    position:relative;
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+.tooltip{
+    position: absolute;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+
+.hovered .tooltip {
+    display: block; /* 마우스 호버 시에만 툴팁 표시 */
+}
+
+.imageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease; /* 트랜지션을 추가하여 부드러운 변화를 만듭니다. */
+}
+
+.imageHovered {
+    filter: blur(5px); /* 마우스 호버 시 이미지에 blur 효과를 추가합니다. */
 }
