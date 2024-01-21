@@ -6,11 +6,11 @@
 
 
 .grid{
-  max-width: 2000px;
+  max-width: 1500px;
   align-self: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 2열로 반복 */
-  gap: 20px; 
+  gap: 1px; 
   margin-left: auto;
-  margin-right: auto;
+  margin-right:auto;
 }
