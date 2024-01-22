@@ -41,12 +41,11 @@ function Detail(){
                 </div>
                 <div>
                     <h1>{title}</h1>
-                    {summary}
-                    {genre}
+                    <p>{summary}</p>
+                    <p>장르: {genre}</p>
+                    <p>평점: {rating}</p>
+                    <p>출시년도: {year}</p>
                 </div>
-                {rating}
-
-                {   year}
             </div>
         </div>
     );
