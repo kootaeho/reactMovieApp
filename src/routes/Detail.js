@@ -16,7 +16,13 @@ function Detail(){
     }, [])
 
     const backgroundImg = movies.background_image;
-
+    const poster = movies.medium_cover_image;
+    const title = movies.title;
+    const summary = movies.summary;
+    const genre = movies.genres;
+    const rating = movies.rating;
+    const year = movies.year;
+    console.log(movies);
     return (
         <div style={{
             backgroundImage: `url(${backgroundImg})`,
@@ -24,11 +30,24 @@ function Detail(){
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             height: '100%',
-            minHeight: '100vh', // 최소 높이를 화면 높이로 설정
+            minHeight: '100vh', 
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
         }}>
+            <div>
+                <div>
+                    <img src={poster} alt="Movie Poster" />
+                </div>
+                <div>
+                    <h1>{title}</h1>
+                    {summary}
+                    {genre}
+                </div>
+                {rating}
+
+                {   year}
+            </div>
         </div>
     );
 }
