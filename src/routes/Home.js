@@ -8,10 +8,9 @@ function Home(){
     const getMovies = async() => {
     const response = await fetch('https://yts.mx/api/v2/list_movies.json?&sort_by=year');
     const json = await response.json();
-    console.log(json);
     setMovies(json.data.movies);
     setLoading(false);
-   
+    console.log(json);
   };
   
   useEffect(() => {
