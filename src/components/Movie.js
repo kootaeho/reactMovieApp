@@ -25,7 +25,7 @@ function Movie({id,title, coverimg, summary, genres}){
         <img src={coverimg} alt={title} className={`${styles.image} ${isHover ? styles.imageHovered : ''}`}/>
         {isHover && (
           <div className={styles.tooltip}>
-            {title}
+            <Link to = {`/movie/${id}`} style={{ color: 'white', textDecoration: 'none' }}>{title}</Link>
           </div>
         )}
         </div>
